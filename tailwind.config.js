@@ -22,11 +22,16 @@ module.exports = {
             },
             animation: {
                 fadeIn: 'fadeIn 0.7s forwards',
+                fadeOut: 'fadeOut 0.7s forwards',
             },
             keyframes: {
                 fadeIn: {
-                    '0%': { opacity: '0', transform: 'translateY(15%)' },
+                    '0%': { opacity: '0', transform: 'translateY(-15%)' },
                     '100%': { opacity: '1', transform: 'translateX(0%)' },
+                },
+                fadeOut: {
+                    '100%': { opacity: '0', transform: 'translateY(-15%)' },
+                    '0%': { opacity: '1', transform: 'translateX(0%)' },
                 },
             },
         },

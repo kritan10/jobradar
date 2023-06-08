@@ -1,4 +1,5 @@
 import { FaAngleDown } from 'react-icons/fa'
+import NavbarDropdown from './NavbarDropdown'
 
 function Navbar() {
     return (
@@ -7,16 +8,25 @@ function Navbar() {
                 JobRadar
             </div>
             <div className="flex justify-between items-center gap-6 md:gap-2">
-                <a className="mx-7 font-semibold cursor-pointer">Home</a>
-                <a className="cursor-pointer hover:font-semibold transition-all">
-                    Salaries <FaAngleDown className="inline-block" />
-                </a>
-                <a className="cursor-pointer hover:font-semibold transition-all">
-                    Internships <FaAngleDown className="inline-block" />
-                </a>
-                <a className="cursor-pointer hover:font-semibold transition-all">
-                    Top Jobs <FaAngleDown className="inline-block" />
-                </a>
+                <button className="mx-7 font-semibold cursor-pointer">
+                    Home
+                </button>
+                <NavbarDropdown
+                    buttonTitle="Salaries"
+                    dropdownItems={['Entry-level', 'Mid-level']}
+                />
+                <NavbarDropdown
+                    buttonTitle="Internships"
+                    dropdownItems={[
+                        'Paid Internship',
+                        'Voluntary Internship',
+                        'Remote Internship',
+                    ]}
+                />
+                <NavbarDropdown
+                    buttonTitle="Top Jobs"
+                    dropdownItems={['Entry-level', 'Mid-level']}
+                />
             </div>
 
             <div className="max-w-[400px]">

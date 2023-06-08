@@ -101,7 +101,7 @@ function Feedback() {
             <p className="opacity-50 text-center text-xl mt-8">
                 Here are some testimonials
             </p>
-            <div className="block relative min-h-[60vh] w-full mt-20">
+            <div className="block relative min-h-[60vh] w-full mt-20 overflow-hidden">
                 {testimonials.map((testimonial, index) => (
                     <Testimonial
                         key={index}
