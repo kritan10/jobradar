@@ -20,6 +20,15 @@ module.exports = {
                 neutral: '#F4F4F4',
                 accent: '#1A1A1A',
             },
+            animation: {
+                fadeIn: 'fadeIn 0.7s forwards',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0', transform: 'translateY(15%)' },
+                    '100%': { opacity: '1', transform: 'translateX(0%)' },
+                },
+            },
         },
     },
     plugins: [],

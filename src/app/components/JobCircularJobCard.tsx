@@ -14,7 +14,7 @@ function JobCircularJobCard({ job }: { job: JobCirculerJobCard }) {
     } = job
 
     return (
-        <div className="border-2 px-5 py-8 rounded-xl">
+        <div className="border-2 px-5 py-8 rounded-xl animate-fadeIn">
             <div className="flex items-stretch gap-5">
                 {companyImage}
                 <div className="flex flex-col justify-between">
